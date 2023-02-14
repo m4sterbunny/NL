@@ -2,14 +2,14 @@
 author: unknown
 proofDate: na
 editor: HB
-comments: First pass iteration over existing skeleton doc https://docs.neon-labs.org/docs/about/how_it_works. TODO update image use of front-end > frontend, back-end > backend, end-point > endpoint. Inline HTML todos in place. NB dropping RPC, even Ethereum does not repeatedly use RPC
-supportingContent: 1. requires overview on API services 2. links to eductational resources external OR internal "Learn" area.
+comments: First pass iteration over existing skeleton doc https://docs.neon-labs.org/docs/about/how_it_works. TODO update image use of front-end > frontend, back-end > backend, end-point > endpoint. Inline HTML todos in place. NB dropping RPC, Ethereum does not repeatedly use RPC
+supportingContent: 1. requires overview page covering API services 2. links to educational resources external OR internal "Learn" area.
 ---
 
 
 # How it works
 
-This page provides a high-level overview of how Neon coordinates communication between Solana and Etherum dApps.
+This page provides a high-level overview of how Neon coordinates communication between Ethereum dApps and Solana.
 
 ### Prerequisites
 
@@ -20,9 +20,9 @@ A basic understanding of:
 - API services <!-- link user to overview page for API services -->
 
 
-## Neon transaction lifecycle
+## Neon's transaction lifecycle
 
-Effecting a user-initiated transaction (tx) from an Etherum dApp on Solana requires three main steps:
+Effecting a user-initiated transaction (tx) from an Ethereum dApp on Solana requires three main steps:
 
 1. The user initiates a tx.
 > The tx is a signed Ethereum-like tx sent using an Ethereum-compatible wallet.
@@ -43,9 +43,11 @@ As detailed in the image, the user's tx request initiates the following:
 - A Solana receipt
 - A corresponding Neon EVM receipt
 
-3.1 The Neon smart contract then:
+ 3.1 The Neon smart contract then:
 
-- Unwraps the tx and checks user signature
+- Unwraps the tx and checks user's signature
 - Loads the Solana state, including account data and the smart contract's code, from Solana storage
 - Executes the tx inside [Solana BPF](https://docs.solana.com/developing/runtime-facilities/programs#bpf-loader)
 - Updates Solana's state to reflect the Neon EVM state <!-- missing logical link here as tx execution impact on Neon EVM not made clear -->
+
+This completes the tx request.
