@@ -29,6 +29,7 @@ Effecting a user-initiated transaction (tx) from an Etherum dApp on Solana requi
 2. This request is received by the Neon Proxy.
 3. The Solana and Neon EVM chains undertake a state change.
 
+![high-level architecture of the 3 main components Solana, Ethereum, and Neon Proxy](assets/how_it_works-fa9a588bb8e8ec190e87e24c426d9999.png)
 As detailed in the image, the user's tx request initiates the following:
 
 1. The Ethereum API passes the tx to the Neon Proxy via the [Neon API service](https://docs.neon-labs.org/docs/developing/connect_rpc).
