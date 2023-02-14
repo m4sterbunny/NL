@@ -2,7 +2,7 @@
 author: unknown
 proofDate: na
 editor: HB
-comments: First pass iteration over existing skeleton doc https://docs.neon-labs.org/docs/about/how_it_works. TODO update image use of front-end > frontend, back-end > backend, end-point > endpoint. Inline HTML todos in place. NB dropping RPC, Ethereum does not repeatedly use RPC
+comments: First pass iteration over existing skeleton doc https://docs.neon-labs.org/docs/about/how_it_works. TODO update image use of front-end > frontend, back-end > backend, end-point > endpoint. Inline HTML todos in place. NB dropping RPC, Ethereum does not repeatedly use RPC. Consider a use case to follow the explainer -- simple tx with links to the block explorer to demo tx.
 supportingContent: 1. requires overview page covering API services 2. links to educational resources external OR internal "Learn" area.
 ---
 
@@ -51,3 +51,4 @@ As detailed in the image, the user's tx request initiates the following:
 - Updates Solana's state to reflect the Neon EVM state <!-- missing logical link here as tx execution impact on Neon EVM not made clear -->
 
 This completes the tx request.
+
